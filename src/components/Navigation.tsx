@@ -7,6 +7,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { useAuth } from "@/hooks/useAuth";
+import { ThemeToggle } from "./ThemeToggle"; // ADD THIS IMPORT
 
 const Navigation = () => {
   const { user, signOut } = useAuth();
@@ -63,6 +64,9 @@ const Navigation = () => {
         </div>
 
         <div className="flex items-center gap-4">
+          {/* ADD THEME TOGGLE HERE */}
+          <ThemeToggle />
+          
           {user ? (
             <>
               <span className="hidden text-sm text-muted-foreground md:inline-flex">
@@ -93,6 +97,12 @@ const Navigation = () => {
             </SheetTrigger>
             <SheetContent>
               <div className="mt-8 flex flex-col gap-4">
+                {/* ADD THEME TOGGLE TO MOBILE MENU */}
+                <div className="flex justify-between items-center mb-4">
+                  <span className="text-lg font-medium">Theme</span>
+                  <ThemeToggle />
+                </div>
+                
                 {navLinks.map((link) => (
                   link.href.startsWith('#') ? (
                     <a

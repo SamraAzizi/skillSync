@@ -37,51 +37,53 @@ const Footer = () => {
             <p className="mb-6 text-muted-foreground">
               Empowering students to learn and teach through meaningful skill exchanges. 
               Join the revolution of peer-to-peer education.
-            </p>
-            <div className="flex gap-4">
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-card transition-colors hover:bg-primary hover:text-primary-foreground"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-card transition-colors hover:bg-primary hover:text-primary-foreground"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-card transition-colors hover:bg-primary hover:text-primary-foreground"
-              >
-                <Github className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-card transition-colors hover:bg-primary hover:text-primary-foreground"
-              >
-                <Mail className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
+              </p>
+              <div className="flex gap-4">
+                {/* Removed Twitter since you don't have it */}
+                <a
+                  href="https://www.linkedin.com/in/samraazizi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-card transition-colors hover:bg-primary hover:text-primary-foreground"
+                  aria-label="LinkedIn Profile"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://github.com/SamraAzizi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-card transition-colors hover:bg-primary hover:text-primary-foreground"
+                  aria-label="GitHub Profile"
+                >
+                  <Github className="h-5 w-5" />
+                </a>
+                <a
+                  href="mailto:samarraazizi@gmail.com"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-card transition-colors hover:bg-primary hover:text-primary-foreground"
+                  aria-label="Email"
+                >
+                  <Mail className="h-5 w-5" />
+                </a>
+              </div>
+              </div>
 
-          {/* Links */}
-          <div>
-            <h3 className="mb-4 font-bold">Product</h3>
-            <ul className="space-y-2">
-              {footerLinks.product.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+              {/* Links */}
+              <div>
+                <h3 className="mb-4 font-bold">Product</h3>
+                <ul className="space-y-2">
+                  {footerLinks.product.map((link) => (
+                    <li key={link.label}>
+                      <a
+                        href={link.href}
+                        className="text-muted-foreground transition-colors hover:text-foreground"
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
           <div>
             <h3 className="mb-4 font-bold">Company</h3>
