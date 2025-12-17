@@ -1,0 +1,10 @@
+project_id = "ghcfptsoqytelwxuagau"
+
+[functions.send-weekly-digest]
+verify_jwt = false
+
+[functions.send-session-reminder]
+verify_jwt = false
+
+[functions.send-push-notification]
+verify_jwt = false
