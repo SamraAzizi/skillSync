@@ -47,3 +47,33 @@ Make sure you have the following installed:
 ```bash
 git clone https://github.com/SamraAzizi/skillSync.git
 cd skillSync
+```
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+
+```
+
+### Environment Setup (Supabase)
+1. Create a project at https://app.supabase.com
+2. Copy your Project URL and Anon Key
+3. Create a `.env` file in the root directory and add:
+```bash
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+```
+
+### Running the Project
+```bash
+npm run dev
+# or
+yarn dev
+
+```
+The application will run locally (URL will be shown in the terminal).
+
+### Project Structure
+```bash
