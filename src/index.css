@@ -8,6 +8,30 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* ... existing variables ... */
+    
+    /* Add chart colors that work in both themes */
+    --chart-1: 16 90% 58%;    /* Orange */
+    --chart-2: 175 60% 45%;   /* Teal */
+    --chart-3: 280 60% 58%;   /* Purple */
+    --chart-4: 45 93% 58%;    /* Yellow */
+    --chart-5: 142 76% 36%;   /* Green */
+  }
+
+  .dark {
+    /* ... existing variables ... */
+    
+    /* Brighter chart colors for dark mode */
+    --chart-1: 16 90% 68%;    /* Brighter orange */
+    --chart-2: 175 60% 55%;   /* Brighter teal */
+    --chart-3: 280 60% 68%;   /* Brighter purple */
+    --chart-4: 45 93% 68%;    /* Brighter yellow */
+    --chart-5: 142 76% 46%;   /* Brighter green */
+  }
+}
+
+@layer base {
+  :root {
     --background: 140 20% 98%;
     --foreground: 150 30% 15%;
 

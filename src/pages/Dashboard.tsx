@@ -212,7 +212,8 @@ const Dashboard = () => {
     });
   };
 
- const COLORS = ['hsl(var(--primary))', 'hsl(var(--secondary))', 'hsl(var(--accent))', '#FBBF24', '#10B981'];
+ const COLORS = ['hsl(16 90% 58%)', 'hsl(175 60% 45%)', 'hsl(280 60% 58%)', 'hsl(45 93% 58%)', 'hsl(142 76% 36%)'];
+
   if (loading) {
     return (
       <div className="min-h-screen bg-background">
