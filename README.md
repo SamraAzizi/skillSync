@@ -77,3 +77,38 @@ The application will run locally (URL will be shown in the terminal).
 
 ### Project Structure
 ```bash
+skillSync/
+│
+├── dist/
+├── node_modules/
+├── src/
+│ ├── assets/
+│ ├── components/
+│ ├── hooks/
+│ ├── integrations/
+│ ├── lib/
+│ ├── pages/
+│ ├── services/
+│ ├── App.css
+│ ├── App.tsx
+│ ├── index.css
+│ ├── main.tsx
+│ └── vite-env.d.ts
+│
+├── supabase/
+├── .env
+├── .gitignore
+├── capacitor.config.ts
+├── components.json
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── tailwind.config.ts
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── README.md
+```
